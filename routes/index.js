@@ -2,6 +2,8 @@
  * GET home page.
  */
 var labs = require('../labs.json');
+// var images = require('../labs.json');
+
 
 exports.view = function(req, res){
   if(labs.length < 9) {
@@ -19,3 +21,8 @@ exports.view = function(req, res){
 	'labs': labs
   });
 };
+
+
+// app.get('/images', function(req,res){
+// 	res.render('tutorial');
+//   })
